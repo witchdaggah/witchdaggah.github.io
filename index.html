@@ -8,6 +8,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Ubuntu+Mono&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="witchdagger.webp">
 
+<script> 
+var konamicode = [38,38,40,40,37,39,37,39,66,65]; 
+var kc=0; 
+     
+    function checker(){ 
+    if (kc==10){ 
+    kc=0; 
+    location.href = 'https://www.youtube.com/watch?v=_yqSbnbUsj4';; 
+    } 
+} 
+function keyUp(e) { 
+    var keynum; 
+    if (window.event){keynum = event.keyCode;} 
+    else if (e.which){keynum = e.which;} 
+        for (i=0;i<222;i++){ 
+        var kx=konamicode[kc]; 
+        if (keynum==i){ 
+        if (i!=kx){kc=0;} else {kc++;} 
+        } 
+    } 
+    checker(); 
+} 
+document.onkeyup = keyUp;  
+</script> 
+
 </head>
 
 <body style="caret-color: transparent;"> 
@@ -56,8 +81,7 @@
 </div>
 
 <br><br><br><br><br>
-<span class="center"> /&nbsp;<a href="https://github.com/witchdaggah">Github</a>&nbsp;/&nbsp;<a href="https://steamcommunity.com/id/dingusdotpl/myworkshopfiles/">Steam Workshop</a>&nbsp;/&nbsp;<a href="https://www.dingus.pl/">dingus.pl</a>&nbsp;/&nbsp;<a rel="me" href="https://hachyderm.io/@witchdagger">Mastodon</a>&nbsp;/</span>
-
+<span class="center"> /&nbsp;<a href="https://github.com/witchdaggah" target="_blank">Github</a>&nbsp;/&nbsp;<a href="https://steamcommunity.com/id/dingusdotpl/myworkshopfiles/" target="_blank">Steam Workshop</a>&nbsp;/&nbsp;<a href="https://www.dingus.pl/" target="_blank">dingus.pl</a>&nbsp;/&nbsp;<a rel="me" href="https://hachyderm.io/@witchdagger" target="_blank">Mastodon</a>&nbsp;/</span>
 <br><br>
 
 &nbsp;hello, welcome to my website!<br>
